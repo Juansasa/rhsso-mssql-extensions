@@ -1,6 +1,5 @@
 embed-server --server-config=standalone-ha.xml --std-out=echo
 try
-    echo "Changing CONSOLE pattern..."
     /subsystem=logging/pattern-formatter=COLOR-PATTERN:write-attribute(name="pattern", value="%K{level}%z{GMT+1}%d{yyyy-MM-dd HH:mm:ss,SSS XXX} %-5p [%c] (%t) %s%e%n")
 catch
 end-try
