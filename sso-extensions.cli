@@ -6,7 +6,7 @@ set XA_SOURCE_CLASS=com.microsoft.sqlserver.jdbc.SQLServerXADataSource
 set JNDI_NAME=java:jboss/datasources/KeycloakDS
 set DRIVER_NAME=sqlserver
 set DRIVER_MODULE_NAME=com.microsoft.sqlserver.jdbc
-set CONNECTION_URL=jdbc:sqlserver://${env.DB_HOST:mssql}:${env.DB_PORT:1433};DatabaseName=${env.DB_DATABASE:Keycloak}
+set CONNECTION_URL=jdbc:sqlserver://${env.DB_HOST:mssql}:${env.DB_PORT:1433}
 set FILE=/opt/eap/extensions/mssql-jdbc.jar
 
 /subsystem=datasources/data-source=$DATA_SOURCE: remove()
