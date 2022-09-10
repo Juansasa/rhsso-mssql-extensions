@@ -30,6 +30,7 @@ data-source add \
     --user-name=${env.DB_USER:sa} \
     --password=${env.DB_PASSWORD:password} \
     --enabled=true \
+    --create-table=true \
     --use-java-context=true \
     --check-valid-connection-sql="SELECT 1" \
     --background-validation=true \
