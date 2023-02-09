@@ -1,0 +1,3 @@
+/subsystem=keycloak-server/spi=login-protocol/:add
+/subsystem=keycloak-server/spi=login-protocol/provider=openid-connect/:add(enabled=true)
+/subsystem=keycloak-server/spi=login-protocol/provider=openid-connect/:map-put(name=properties,key="legacy-logout-redirect-uri",value="true")
