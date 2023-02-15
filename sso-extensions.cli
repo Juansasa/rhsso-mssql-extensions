@@ -37,6 +37,5 @@ data-source add \
     --flush-strategy=IdleConnections
 
 /subsystem=keycloak-server/spi=connectionsJpa/provider=default:write-attribute(name=properties.schema,value=${env.DB_SCHEMA:dbo})
-/subsystem=logging/console-handler=CONSOLE/:write-attribute(name=named-formatter,value=OPENSHIFT)
 
 run-batch
